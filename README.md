@@ -1,0 +1,2 @@
+# LICENCJAT
+Repozytorium pracy licencjackiej
