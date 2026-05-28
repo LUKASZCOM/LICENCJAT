@@ -1,0 +1,15 @@
+## Tworzenie naszego modelu ResNet
+import numpy as np
+y_train_poisoned_10 = poison_label(y_train_cat, ratio=0.1)
+model = resnet_model()
+model.summary()
+start_time = time.time()
+resnet_10 = model.fit(
+    x_train, y_train_poisoned_10,
+    epochs=100,
+    batch_size=64,
+    validation_data=(x_test, y_test_cat),
+    verbose=1
+)
+end_time = time.time()
+...............
